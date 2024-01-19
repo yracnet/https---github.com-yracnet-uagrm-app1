@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<ui:composition
+    template="./base.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    >
+    <ui:define name="head">
+        <title>Lista de Productos</title>
+    </ui:define>
+    <ui:define name="title">
+        Lista de Productos
+    </ui:define>
+    <ui:define name="content">
+        <h:form>
+            <div class="row">
+                
+            </div>
+            Nombre: <h:inputText value="${_productoNew.producto.nombre}"/>
+            <br/>
+            Descripcion <h:inputTextarea value="${_productoNew.producto.descripcion}"/>
+            <br/>
+            Precio: <h:inputText value="${_productoNew.producto.precio}"/>
+            <br/>
+            Cantidad Disponible <h:inputText value="${_productoNew.producto.cantidadDisponible}"/>
+            <br/>
+            Nombre: <h:inputText value="${_productoNew.producto.nombre}"/>
+            <br/>
+            <h:commandButton action="${_productoNew.guardarProducto()}" value="Guardar"/>
+            <h:commandButton action="index?faces-redirect=true" value="Retornar"/>
+        </h:form>
+       
+    </ui:define>
+
+</ui:composition>
+

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<ui:composition
+    template="./base.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    >
+    <ui:define name="head">
+        <title>Lista de Productos</title>
+    </ui:define>
+    <ui:define name="title">
+        Lista de Productos
+    </ui:define>
+    <ui:define name="content">
+        <h:form>
+            <h:commandButton action="newForm?faces-redirect=true" value="Crear"/>
+            <h:commandButton action="${_productoList.buscar()}" value="Listar"/>
+            <h:dataTable value="${_productoList.lista}" var="row">
+                <h:column>
+                    <f:facet name="header">Nombre</f:facet>
+                    <h:outputText value="${row.nombre}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Descripcion</f:facet>
+                    <h:outputText value="${row.descripcion}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Precio</f:facet>
+                    <h:outputText value="${row.precio}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Cantidad Disponible</f:facet>
+                    <h:outputText value="${row.cantidadDisponible}"/>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
+
