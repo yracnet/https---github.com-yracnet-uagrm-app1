@@ -15,6 +15,7 @@ public class ProductoNewBean implements Serializable {
 
     private ProductoBase producto = new ProductoBase();
     @Inject
+    @SmokeMode
     private ProductoBLL productoBLL;
     
     

@@ -7,14 +7,16 @@ import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import java.io.Serializable;
 import java.util.List;
+import lombok.Getter;
 
 @Named(value = "_productoList")
 @ViewScoped
-@lombok.Data
+@Getter
 public class ProductoListBean implements Serializable {
 
     private String name = "HIsss111111s";
     @Inject
+    @SmokeMode
     private ProductoBLL productoBLL;
 
     private List<ProductoBase> lista = null;

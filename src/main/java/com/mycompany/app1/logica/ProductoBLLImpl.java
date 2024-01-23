@@ -2,14 +2,14 @@ package com.mycompany.app1.logica;
 
 import com.mycompany.app1.model.ProductoBase;
 import jakarta.ejb.Stateless;
-import jakarta.inject.Inject;
+import jakarta.enterprise.inject.Default;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 import java.util.List;
 
-
-//@Stateless
+@Default
+@Stateless
 public class ProductoBLLImpl implements ProductoBLL {
 
     @PersistenceContext
