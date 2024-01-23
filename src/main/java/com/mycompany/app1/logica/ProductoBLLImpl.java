@@ -9,7 +9,7 @@ import jakarta.persistence.TypedQuery;
 import java.util.List;
 
 
-@Stateless
+//@Stateless
 public class ProductoBLLImpl implements ProductoBLL {
 
     @PersistenceContext

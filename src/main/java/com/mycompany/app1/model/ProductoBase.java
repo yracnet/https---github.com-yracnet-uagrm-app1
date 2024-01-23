@@ -32,4 +32,11 @@ public class ProductoBase implements Serializable {
     @Embedded
     private UpdatedPolice actualizacion;
 
+    public static ProductoBase createProductoBase(Long id) {
+        ProductoBase instance = new ProductoBase();
+        instance.setId(id);
+        instance.setNombre("Name" + id);
+        return instance;
+    }
+
 }

@@ -4,7 +4,11 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import java.io.Serializable;
 import java.util.Date;
+import lombok.Data;
+import lombok.ToString;
 
+@Data
+@ToString
 @Embeddable
 public class CreatedPolice implements Serializable {
 
