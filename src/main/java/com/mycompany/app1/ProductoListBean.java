@@ -16,7 +16,6 @@ public class ProductoListBean implements Serializable {
 
     private String name = "HIsss111111s";
     @Inject
-    @SmokeMode
     private ProductoBLL productoBLL;
 
     private List<ProductoBase> lista = null;
