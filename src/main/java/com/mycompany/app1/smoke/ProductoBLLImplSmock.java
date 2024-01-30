@@ -2,7 +2,7 @@ package com.mycompany.app1.smoke;
 
 import com.mycompany.app1.logica.ProductoBLL;
 import com.mycompany.app1.model.ProductoBase;
-import jakarta.ejb.Stateless;
+import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
 import com.mycompany.app1.SmokeMode;

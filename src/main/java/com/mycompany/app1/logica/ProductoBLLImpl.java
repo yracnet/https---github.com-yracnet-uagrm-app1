@@ -1,11 +1,11 @@
 package com.mycompany.app1.logica;
 
 import com.mycompany.app1.model.ProductoBase;
-import jakarta.ejb.Stateless;
-import jakarta.enterprise.inject.Default;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.TypedQuery;
+import javax.ejb.Stateless;
+import javax.enterprise.inject.Default;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Default

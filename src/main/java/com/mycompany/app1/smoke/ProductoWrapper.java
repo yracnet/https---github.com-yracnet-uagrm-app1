@@ -1,13 +1,6 @@
 package com.mycompany.app1.smoke;
 
 import com.mycompany.app1.model.*;
-import jakarta.persistence.Column;
-import jakarta.persistence.Embedded;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import java.io.Serializable;
 import java.util.Date;
 import lombok.Data;
 import lombok.ToString;
