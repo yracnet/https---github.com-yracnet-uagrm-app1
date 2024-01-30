@@ -17,5 +17,12 @@ public class UpdatedPolice implements Serializable {
     private String usuario;
     @Column(name = "fecha_actualizacion")
     private Date fecha;
+    
+    public static UpdatedPolice createUpdatedPolice(){
+        UpdatedPolice value = new UpdatedPolice();
+        value.fecha = new Date();
+        value.usuario = "U001";
+        return value;
+    }
 
 }

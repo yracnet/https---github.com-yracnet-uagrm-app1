@@ -1,7 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<faces-config version="3.0"
-              xmlns="https://jakarta.ee/xml/ns/jakartaee"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd">
-
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+    version="2.1">
+    
+    <managed-bean>
+        <managed-bean-class>com.mycompany.app1.ProductoListBean</managed-bean-class>
+        <managed-bean-scope>view</managed-bean-scope>
+        <managed-bean-name>_productoList</managed-bean-name>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-class>com.mycompany.app1.ProductoNewBean</managed-bean-class>
+        <managed-bean-scope>view</managed-bean-scope>
+        <managed-bean-name>_productoNew</managed-bean-name>
+    </managed-bean>
 </faces-config>

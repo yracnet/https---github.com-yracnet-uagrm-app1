@@ -31,7 +31,7 @@ public class DescuentoBLLImpl implements DescuentoBLL {
     }
 
     @Override
-    public DescuentoBase buscarDescuento(DescuentoBase descuento) {
+    public DescuentoBase buscarDescuento(String codigo) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

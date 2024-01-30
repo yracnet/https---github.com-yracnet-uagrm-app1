@@ -13,5 +13,5 @@ import com.mycompany.app1.model.DescuentoBase;
 public interface DescuentoBLL {
     public DescuentoBase registrarDescuentoNormal(DescuentoBase descuento);
     public DescuentoBase registrarDescuentoGlobal(DescuentoBase descuento);
-    public DescuentoBase buscarDescuento(DescuentoBase descuento);
+    public DescuentoBase buscarDescuento(String codigo);
 }

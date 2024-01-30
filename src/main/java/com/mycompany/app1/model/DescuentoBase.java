@@ -19,6 +19,8 @@ public class DescuentoBase implements Serializable {
     @Column
     private String nombre;
     @Column
+    private String descripcion;
+    @Column
     private Long productoId;
     @Column
     private DescuentoTipo tipo;
