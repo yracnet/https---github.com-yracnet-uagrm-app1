@@ -1,4 +1,4 @@
-# App1
+# Aplicación de Principios SOLID
 
 - Netbeans 19
 - JDK 21
