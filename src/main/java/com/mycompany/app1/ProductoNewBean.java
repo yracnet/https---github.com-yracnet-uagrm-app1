@@ -11,13 +11,14 @@ public class ProductoNewBean implements Serializable {
 
     private ProductoBase producto = new ProductoBase();
     @Inject
-    @SmokeMode
+    //@SmokeMode
     private ProductoBLL productoBLL;
     
     
     public String guardarProducto() {
+        System.out.println("GUARDAT!!!!!"+ producto);
         productoBLL.crearProducto(producto);
-    return "index?faces-redirect=true";
+        return "index?faces-redirect=true";
     }
     
 }

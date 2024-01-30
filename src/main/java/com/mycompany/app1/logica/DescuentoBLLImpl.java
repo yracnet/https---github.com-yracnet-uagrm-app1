@@ -22,17 +22,19 @@ public class DescuentoBLLImpl implements DescuentoBLL {
 
     @Override
     public DescuentoBase registrarDescuentoNormal(DescuentoBase descuento) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return descuento;
     }
 
     @Override
     public DescuentoBase registrarDescuentoGlobal(DescuentoBase descuento) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return descuento;
     }
 
     @Override
     public DescuentoBase buscarDescuento(String codigo) {
-        throw new UnsupportedOperationException("Not supported yet.");
+       DescuentoBase value = new DescuentoBase();
+       value.setCodigo(codigo);
+        return value;
     }
 
 }

@@ -24,6 +24,7 @@ public class ProductoBLLImpl implements ProductoBLL {
 
     @Override
     public ProductoBase crearProducto(ProductoBase producto) {
+        System.out.println("PERSIST");
         em.persist(producto);
         return producto;
     }
